@@ -1,4 +1,10 @@
 ## Rails 4.0.0 (unreleased) ##
+*   Fixed a bug in `ActiveRecord::Associations::CollectionAssociation#find_by_scan` when using has_many association with :inverse_of option and UUID primary key.
+    Fixes #10450.
+
+    *kennyj*
+
+*   Confirm a record has not already been destroyed before decrementing counter cache.
 
 *   Allow to use databases.rake tasks without having `Rails.application`.
 
